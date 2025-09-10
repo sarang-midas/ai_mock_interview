@@ -1,4 +1,3 @@
-
 import os
 import pandas as pd
 import streamlit as st
@@ -7,15 +6,13 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 # Load variables from .env
-load_dotenv()
+client = OpenAI(api_key="sk-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")
 
-api_key = os.getenv("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
-
-client = OpenAI(api_key=api_key)
 
  # Uses OPENAI_API_KEY from environment
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "skills_dataset.csv")
+
 
 def load_role_skills():
     try:
