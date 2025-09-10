@@ -3,7 +3,7 @@ import streamlit as st
 from openai import OpenAI
 
 # ⚠️ Hardcoded API key (testing only)
-client = OpenAI(api_key="sk-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")
+client = OpenAI(api_key="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")
 
 SYSTEM_PROMPT = "You are a helpful, strict mock interviewer. Ask one question at a time, wait for answer, then give brief feedback and the next question."
 
