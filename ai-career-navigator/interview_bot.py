@@ -2,8 +2,7 @@
 import streamlit as st
 from openai import OpenAI
 
-# ⚠️ Hardcoded API key (testing only)
-client = OpenAI(api_key="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")
+client = OpenAI()
 
 SYSTEM_PROMPT = "You are a helpful, strict mock interviewer. Ask one question at a time, wait for answer, then give brief feedback and the next question."
 
