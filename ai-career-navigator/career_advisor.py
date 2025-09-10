@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 # Load variables from .env
-client = OpenAI(api_key="sk-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")
+client = OpenAI(api_key="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")
 
 
  # Uses OPENAI_API_KEY from environment
