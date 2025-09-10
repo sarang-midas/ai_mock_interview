@@ -1,7 +1,7 @@
-
 from openai import OpenAI
 
-client = OpenAI()
+# ⚠️ Hardcoded API key (testing only)
+client = OpenAI(api_key="sk-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")
 
 def improve_resume(resume_text: str, target_role: str = "Data Analyst") -> str:
     prompt = f"""
