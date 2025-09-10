@@ -1,7 +1,7 @@
 
 import os
 import pandas as pd
-from openai import OpenAI
+import streamlit as st
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -9,7 +9,9 @@ from openai import OpenAI
 # Load variables from .env
 load_dotenv()
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+api_key = os.getenv("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
+
+client = OpenAI(api_key=api_key)
 
  # Uses OPENAI_API_KEY from environment
 
